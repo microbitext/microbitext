@@ -1,0 +1,34 @@
+{
+    "name": "microbit-ext",
+    "version": "0.6.69",
+    "description": "microbit extend driver for OLED, RGBLight, UltrasonicPac,SegPac,BMP180",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "microbit-ext.ts",
+		"_locales/zh/core-strings.json",
+		"pxtparts.json",
+        "sendBuffer.asm"
+    ],
+	"icon": "icon.png",
+    "testFiles": [
+        "neotest.ts"
+    ],
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 0
+                }
+            }
+        }
+    },
+    "targetVersions": {
+        "target": "1.2.17"
+    },
+    "public": true,
+	"preferredEditor": "tsprj"
+}
